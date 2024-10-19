@@ -12,6 +12,9 @@ public class WikipediaDownloader implements Runnable {
     private String keyword;
 
     public void run() {
+        if(this.keyword==null || this.keyword.length()==0){
+            return;
+        }
 
     }
 
