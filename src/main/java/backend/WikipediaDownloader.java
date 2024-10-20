@@ -16,6 +16,9 @@ public class WikipediaDownloader implements Runnable {
             return;
         }
 
+        this.keyword=this.keyword.trim().replaceAll("[ ]+","_");
+
+
     }
 
     public static void main(String[] args) {
