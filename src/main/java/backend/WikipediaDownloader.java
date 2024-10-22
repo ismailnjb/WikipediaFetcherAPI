@@ -21,6 +21,8 @@ public class WikipediaDownloader implements Runnable {
         String wikiUrl=getWikipediaUrlForQuery(this.keyword);
 
 
+
+
     }
 
     private String getWikipediaUrlForQuery(String cleanKeyword) {
