@@ -18,7 +18,13 @@ public class WikipediaDownloader implements Runnable {
 
         this.keyword=this.keyword.trim().replaceAll("[ ]+","_");
 
+        String wikiUrl=getWikipediaUrlForQuery(this.keyword);
 
+
+    }
+
+    private String getWikipediaUrlForQuery(String cleanKeyword) {
+        return "https://en.wikipedia.org/wiki/"+cleanKeyword;
     }
 
     public static void main(String[] args) {
